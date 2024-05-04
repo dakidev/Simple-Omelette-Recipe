@@ -1,0 +1,264 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: geral-font;
+    src: url(outfit/Outfit-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: title-font;
+    src: url(young-serif/YoungSerif-Regular.ttf);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+#omelette-img {
+width: 100%;
+}
+
+h1 {
+text-align: center;
+font-family: title-font;
+margin: 20px auto;
+color: #351d14;
+width: 300px;
+}
+
+main h2 {
+    padding-bottom: 20px;
+    font-family: title-font;
+    color: #824533;
+    font-size: 1.6em;
+}
+
+main p {
+    font-family: 'geral-font';
+    text-align: justify;
+    color: rgba(0, 0, 0, 0.938);
+    margin-bottom: 10px;
+}
+
+section.align-conteiner {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0 20px 0;
+    
+    width: 100%;
+}
+
+article {
+    width: 320px;
+}
+
+#preparation-container {
+    width: 300px;
+    padding: 20px;
+    border-radius: 15px;
+    margin: 20px auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    background-color: #f2e4d89a;
+}
+
+#preparation-container > ul {
+    list-style-type: disc;
+
+}
+
+.preparation-title {
+    color: #96516f;
+    padding-bottom: 10px;
+    padding-left: 10px;
+    font-family: geral-font;
+    font-size: 1.3em;
+    text-align: left;
+    width: 100%;
+}
+
+ul {
+    margin: auto;
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 15px 0;
+    align-items: center;
+}
+
+article.geral {
+        display: flex;
+        flex-direction: column;
+        width: 300px;   
+        padding: 10px 40px;
+}
+
+article.geral > ul {
+    list-style-type: disc;
+}
+
+section > p {
+    text-align: center;
+}
+
+
+@media screen and (min-width: 1025px) {
+
+    body {
+        background-color: #F3E5D8;
+    }
+
+    #img-container {
+        display: none;
+        width: 1000px;
+        justify-content: center;
+        align-items: center;
+        margin: 30px auto;
+        background-color: white;
+        border-radius: 15px;
+    }
+
+    #omelette-img {
+        width: 100%;
+        border-radius: 15px;
+    }    
+
+    main {
+        background-color: white;
+        max-width: 700px;
+        margin: 30px auto;
+        padding: 30px;
+        border-radius: 15px;
+        box-shadow: 11px 2px 15px #00000005;
+        
+    }
+
+    main h1 {
+        text-align: left;
+        margin: 20px 0;
+        width: 500px;
+        letter-spacing: 2px;
+    }
+
+    #preparation-container {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: left;
+        
+    }
+
+    #preparation-container > ul {
+        text-align: start;
+        width: 100%;
+        padding-left: 40px;
+        padding-top: 5px;
+    }
+
+    ul {
+        width: 100%;
+    }
+
+    article.geral {
+        width: 1000px;
+        
+    }
+
+    article.geral > ul {
+        width: 80%;
+        position: relative;
+        left: -60px;
+    }
+
+    section.align-conteiner {
+        width: 100%;
+        text-align: left;
+        display: flex;
+            justify-content: left;
+    }
+
+    #space_between_minute {
+        display: inline-block;
+        padding: 0;
+    }
+
+    .geral {
+        width: 100%;
+    }
+
+    hr {
+        width: 100%;
+    }
+
+    p {
+        text-align: left;
+        
+    }
+
+    #pdescription {
+        width: 700px;
+    }
+
+    br {
+        display: none;
+    }
+    
+}
+
+
+strong {
+    color: rgba(0, 0, 0, 0.781)
+}
+
+span {
+    padding-top: 4px;
+    display: block;
+}
+
+li {
+    color: rgba(0, 0, 0, 0.781);
+    font-family: geral-font;
+    text-align: justify;
+    padding-left: 20px;
+    width: 100%;
+}
+
+.num-color {
+    display: inline-block;
+    font-weight: bold;
+    color: #824533;
+    padding-right: 10px;
+}
+
+table {
+    border-collapse: separate;
+    color: rgba(0, 0, 0, 0.842);
+}
+
+td {
+    padding-left: 30px;
+    padding-bottom: 10px;
+    font-family: geral-font;
+}
+
+td.macronutrients {
+    color: #824533;
+    font-weight: bold;
+}
+
+hr {
+    margin: auto;
+    width: 90%;
+    border: 1px solid rgb(219, 219, 219);
+}
+
+.hrtable {
+    width: 100%;
+}
